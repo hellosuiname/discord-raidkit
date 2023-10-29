@@ -1,0 +1,13 @@
+.NavbarContainer {
+  margin-left: 0;
+}
+
+.NavbarLi {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}

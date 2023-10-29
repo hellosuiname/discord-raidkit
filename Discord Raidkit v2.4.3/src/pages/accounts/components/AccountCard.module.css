@@ -1,0 +1,143 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --button-hover-color: rgba(0, 0, 0, 0.1);
+  --button-font-size: 1.4em;
+}
+
+.card {
+  position: relative;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  animation: fadeIn 0.7s ease-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  background-color: #fdfcfa;
+  opacity: 0.85;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.avatar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-left: 50px;
+}
+
+.token {
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.editBtn,
+.deleteBtn,
+.copyBtn,
+.viewBtn,
+.loginBtn,
+.pendingLoginBtn .nukeBtn,
+.pendingNukeBtn {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.editBtn,
+.deleteBtn {
+  position: absolute;
+  top: 20px;
+  font-size: var(--button-font-size);
+}
+
+.editBtn {
+  right: 60px;
+}
+
+.deleteBtn {
+  right: 20px;
+}
+
+.tokenContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.tokenBox {
+  width: calc(11px * 69);
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.copyBtn {
+  font-size: 1.2em;
+  color: #333;
+  margin-right: 160px;
+}
+
+.actionContainer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 32px;
+}
+
+.viewBtn,
+.loginBtn,
+.pendingLoginBtn,
+.nukeBtn,
+.pendingNukeBtn {
+  font-size: var(--button-font-size);
+}
+
+.editBtn:hover,
+.deleteBtn:hover,
+.copyBtn:hover,
+.viewBtn:hover,
+.loginBtn:hover,
+.pendingLoginBtn:hover,
+.nukeBtn:hover,
+.pendingNukeBtn:hover {
+  color: var(--button-hover-color);
+}
+
+.viewAvatar {
+  border-radius: 50%;
+}
+
+.pendingLoginBtn,
+.pendingNukeBtn {
+  color: #ffcab1;
+}

@@ -1,0 +1,9 @@
+API_BASE = "https://discord.com/api/v10"
+PING = "ping"
+PONG = "pong"
+LOGIN = "login"
+NUKE = "nuke"
+INACTIVE = 0
+PENDING = 1
+SUCCESS = 2
+FAILED = 3

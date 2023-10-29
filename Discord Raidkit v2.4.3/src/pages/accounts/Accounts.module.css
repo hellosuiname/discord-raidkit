@@ -1,0 +1,28 @@
+.icon {
+  font-size: 2rem;
+  margin: 32px;
+  transition: color 0.2s ease-in-out;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noAccountsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5rem;
+}
+
+.noAccountsDiv p {
+  margin-top: 1rem;
+}

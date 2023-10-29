@@ -1,0 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.overviewBackground {
+  background-image: url("../public/overview-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
